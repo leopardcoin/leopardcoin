@@ -1,0 +1,6 @@
+usr/local/bin/leopardcoin-qt usr/bin
+share/pixmaps/leopardcoin32.xpm usr/share/pixmaps
+share/pixmaps/leopardcoin16.xpm usr/share/pixmaps
+share/pixmaps/leopardcoin128.png usr/share/pixmaps
+debian/leopardcoin-qt.desktop usr/share/applications
+debian/leopardcoin-qt.protocol usr/share/kde4/services/

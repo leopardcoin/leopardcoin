@@ -1,0 +1,70 @@
+Source: leopardcoin
+Section: utils
+Priority: optional
+Maintainer: Holger Schinzel <holger@leopardcoin.org>
+Uploaders: Holger Schinzel <holger@leopardcoin.org>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb4.8++-dev,
+ libssl-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-system1.48-dev | libboost-system-dev (>> 1.47),
+ libboost-filesystem1.48-dev | libboost-filesystem-dev (>> 1.47),
+ libboost-program-options1.48-dev | libboost-program-options-dev (>> 1.47),
+ libboost-thread1.48-dev | libboost-thread-dev (>> 1.47),
+ libboost-test1.48-dev | libboost-test-dev (>> 1.47),
+ libboost-chrono1.48-dev | libboost-chrono-dev (>> 1.47),
+ libminiupnpc8-dev | libminiupnpc-dev,
+ qt4-qmake, libqt4-dev,
+ qttools5-dev-tools, qttools5-dev,
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler,
+ python,
+ libzmq3-dev
+Standards-Version: 3.9.2
+Homepage: https://www.leopardcoin.org/
+Vcs-Git: git://github.com/leopardcoinpay/leopardcoin.git
+Vcs-Browser: https://github.com/leopardcoinpay/leopardcoin
+
+Package: leopardcoind
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ LeopardCoin is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. LeopardCoin uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. LeopardCoin Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides the daemon, leopardcoind, and the CLI tool
+ leopardcoin-cli to interact with the daemon.
+
+Package: leopardcoin-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ LeopardCoin is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. LeopardCoin uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. LeopardCoin Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides LeopardCoin-Qt, a GUI for LeopardCoin based on Qt.
+
+Package: leopardcoin-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ LeopardCoin is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. LeopardCoin uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. LeopardCoin Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides leopardcoin-tx, a command-line transaction creation
+ tool which can be used without a leopardcoin daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=LeopardCoin Core
+Comment=LeopardCoin P2P Cryptocurrency
+Comment[de]=Verbinde mit dem LeopardCoin peer-to-peer Netzwerk
+Comment[fr]=LeopardCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=LeopardCoin, eşten eşe kriptografik sanal para birimi
+Exec=leopardcoin-qt %u
+Terminal=false
+Type=Application
+Icon=leopardcoin128
+MimeType=x-scheme-handler/leopardcoin;
+Categories=Office;Finance;
